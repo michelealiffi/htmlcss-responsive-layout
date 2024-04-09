@@ -442,12 +442,56 @@ footer .col {
 }
 
 @media screen and (max-width: 480px) {
-    .row {
+    header .row {
+        margin-left: 20px;
+    }
+    
+    .container .row {
         flex-wrap: wrap;
     }
 
-    .col {
-        width:;
-        margin-bottom:;
+    .container .col-60 {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .content {
+        margin-left: 50px;
+    }
+    
+    .content p {
+        margin-right: 100px;
+    }
+
+    .container .col-33 {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .row-2 {
+        flex-wrap: wrap;
+    }
+
+    .row-2 .col-33 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container-2 {
+        margin-top: 50px;
+    }
+    
+    .container-4 .col-33 {
+        width: 100%;
+    }
+    
+    .container-5 .row {
+        display: block;
+    }
+
+    .container-5 .col-20 {
+        margin-left: 20px;
     }
 }
