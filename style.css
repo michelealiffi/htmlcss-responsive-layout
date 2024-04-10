@@ -31,13 +31,11 @@ header .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 header .col {
     display: flex;
-    margin: 10px;
+    margin: 10px 0px;
     width: 45%;
 }
 
@@ -47,40 +45,38 @@ main {
 }
 
 .container {
-    margin-left: 20%;
-    margin-right: 20%;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-.container .row {
+#jumbo .row {
     display: flex;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-.row-2 {
-    display: flex;
-}
-
-.container .col-60 {
+#jumbo .col-60 {
     background-color: rgb(151, 195, 245);
     border-radius: 10%;
-    margin-right: 20px;
     margin-bottom: 20px;
     width: 60%;
-    display: block;
+    display: flex;
 }
 
-.content {
+#jumbo .col-60 .content {
     margin-top: 20px;
     margin-left: 20px;
 }
 
-.content h2 {
+#jumbo .col-60 h2 {
     color: rgb(29, 126, 253);
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.content p {
+#jumbo .col-60 p {
     margin-bottom: 30px;
     margin-right: 80px;
     line-height: 200%;
@@ -89,7 +85,44 @@ main {
     color: rgb(71, 71, 71);
 }
 
-.content span {
+#jumbo .col-60 span {
+    background-color: rgb(29, 126, 253);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20%;
+    letter-spacing: 2px;
+}
+
+#jumbo .col-60 img {
+    margin-left: 10px;
+    width: 80%;
+}
+
+#jumbo .col-33 .content {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#jumbo .col-33 h2 {
+    color: rgb(29, 126, 253);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#jumbo .col-33 p {
+    margin-bottom: 30px;
+    margin-right: 80px;
+    line-height: 200%;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+}
+
+#jumbo .col-33 span {
     background-color: rgb(29, 126, 253);
     color: white;
     font-weight: bold;
@@ -106,64 +139,54 @@ main {
     filter: invert(100%);
 }
 
-.content img {
-    margin-left: 10px;
-    width: 20%;
-}
-
-.container .col-33 {
+#jumbo .col-33 {
     background-color: rgb(151, 195, 245);
-    width: calc(100% / 3);
+    width: calc(100% / 3 -30px);
+    margin-left: 15px;
+    margin-right: 15px;
     border-radius: 10%;
     margin-bottom: 20px;
 }
 
-.row-2 .col-33 {
-    margin-right: 20px;
-}
-
-.col-33 h2 {
+#jumbo .col-33 h2 {
     text-align: center;
 }
 
-.col-33 p {
+#jumbo .col-33 p {
     margin-bottom: 0px;
     margin-right: 0px;
     line-height: 200%;
     text-align: center;
 }
 
-.container-2 {
-    background-color: rgb(161, 138, 226);
+#planning {
+    background-color: rgb(151, 146, 228);
+}
+
+#planning .container {
     margin-top: 70px;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.container-2 .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container-2 .col-50 {
+.container .col-50 {
     background-color: blanchedalmond;
     width: 45%;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 50px;
 }
 
-.container-3 {
+#partners .container {
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 50px;
 }
 
-.container-3 .row {
+#partners .container .row {
     background-color: aqua;
 }
 
-.container-3 .col-100 {
+.container .col-100 {
     background-color: rgb(255, 0, 179);
     margin-left: 20%;
     margin-right: 20%;
@@ -172,20 +195,20 @@ main {
     border-radius: 5%;
 }
 
-.container-4 {
+#benefits .container {
     background-color: rgb(161, 138, 226);
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 50px;
 }
 
-.container-4 .row {
+#benefits .row {
     background-color: rgb(155, 124, 59);
     display: flex;
     padding-bottom: 20px;
 }
 
-.container-4 .col-100 {
+#benefits .col-100 {
     background-color: rgb(51, 175, 82);
     width: 100%;
     margin-left: 20px;
@@ -194,7 +217,7 @@ main {
     padding: 10%;
 }
 
-.container-4 .col-33 {
+#benefits .col-33 {
     background-color: rgb(51, 175, 82);
     width: calc(100% /3);
     margin-left: 20px;
@@ -203,18 +226,18 @@ main {
     padding: 10%;
 }
 
-.container-5 {
+#about .container {
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 50px;
 }
 
-.container-5 .row {
+#about .row {
     background-color: rgb(59, 141, 155);
     display: flex;
 }
 
-.container-5 .col-80 {
+#about .col-80 {
     background-color: rgb(71, 40, 45);
     width: 75%;
     margin-right: 20px;
@@ -224,7 +247,7 @@ main {
     padding: 10%;
 }
 
-.container-5 .col-20 {
+#about .col-20 {
     background-color: rgb(73, 40, 51);
     width: 20%;
     margin-top: 20px;
@@ -232,18 +255,18 @@ main {
     padding: 10%;
 }
 
-.container-6 {
+#getstart .container {
     background-color: rgb(161, 138, 226);
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 50px;
 }
 
-.container-6 .row {
+#getstart .row {
     background-color: rgb(69, 59, 155);
 }
 
-.container-6 .col {
+#getstart .col {
     background-color: rgb(51, 175, 138);
     margin-left: 20%;
     margin-right: 20%;
@@ -268,230 +291,10 @@ footer .col {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        font-size: 0px;
-    }
 
-    header .row {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    header p {
-        padding: 0px;
-        padding-left: 0px;
-    }
-
-    header span {
-        padding: 5px;
-        background-color: white;
-        border-radius: 30%;
-        margin-left: 90%;
-    }
-
-    .container {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    
-    .container .col-60 {
-        border-radius: 5%;
-        margin-left: 20px;
-    }
-    
-    .content {
-        margin-top: 0px;
-        margin-left: 20px;
-    }
-    
-    .content h2 {
-        color: rgb(29, 126, 253);
-        font-size: 20px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .content p {
-        margin-bottom: 0px;
-        margin-right: 50px;
-        line-height: 200%;
-        font-size: 15px;
-        font-weight: bold;
-        color: rgb(71, 71, 71);
-    }
-    
-    .content span {
-        font-size: 15px;
-        padding: 15px;
-        border-radius: 20%;
-        letter-spacing: 2px;
-    }
-    
-    .content img {
-        margin-top: 50px;
-        width: 60%;
-    }
-
-    .container .col-33 {
-        background-color: rgb(151, 195, 245);
-        width: calc(100% / 3);
-        border-radius: 10%;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .row-2 .col-33 {
-        margin-bottom: 10px;
-    }
-
-    .container-2 {
-        margin-top: 0px;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    .container-2 .row {
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
-
-    .container-2 .col-50 {
-        width: 100%;
-        padding: 0;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .container-2 .content {
-        margin: 0;
-        padding: 0;
-    }
-
-    .col-50 img {
-        margin: 0;
-        width: 100%;
-    }
-
-    .container-3 {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    
-    .container-3 .col-100 {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-        padding: 10%;
-    }
-    
-    .container-4 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    
-    .container-4 .row {
-        flex-wrap: wrap;
-        padding-bottom: 20px;
-    }
-    
-    .container-4 .col-100 {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-        padding: 10%;
-    }
-    
-    .container-4 .col-33 {
-        width: calc(90% /2);
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-    }
-    
-    .container-5 {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    
-    .container-5 .col-20 {
-        margin-right: 20px;
-    }
-    
-    .container-6 {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    
-    .container-6 .col {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    
-    footer {
-        padding-right: 0%;
-        padding-left: 0%;
-    }
-    
-    footer .col {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 
 }
 
 @media screen and (max-width: 480px) {
-    header .row {
-        margin-left: 20px;
-    }
-    
-    .container .row {
-        flex-wrap: wrap;
-    }
 
-    .container .col-60 {
-        width: 100%;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    
-    .content {
-        margin-left: 50px;
-    }
-    
-    .content p {
-        margin-right: 100px;
-    }
-
-    .container .col-33 {
-        width: 100%;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .row-2 {
-        flex-wrap: wrap;
-    }
-
-    .row-2 .col-33 {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .container-2 {
-        margin-top: 50px;
-    }
-    
-    .container-4 .col-33 {
-        width: 100%;
-    }
-    
-    .container-5 .row {
-        display: block;
-    }
-
-    .container-5 .col-20 {
-        margin-left: 20px;
-    }
 }
