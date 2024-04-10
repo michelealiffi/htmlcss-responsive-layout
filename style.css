@@ -161,94 +161,152 @@ main {
     padding-right: 20%;
 }
 
-.container .col-50 {
-    background-color: blanchedalmond;
-    width: 45%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 #planning img {
-    width: 100%;
 }
 
-#partners .container {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 50px;
+#partners .row {
 }
 
-#partners .container .row {
-    background-color: aqua;
+#partners .col-100 {
+    display: flex;
 }
 
-.container .col-100 {
-    background-color: rgb(255, 0, 179);
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20px;
-    padding: 10%;
-    border-radius: 5%;
+#partners .col-100 img {
+    width: 20%;
+    height: 100%;
+    border-radius: 50%;
 }
 
-#benefits .container {
+#partners .testimonial {
+    text-align: center;
+}
+
+
+#benefits {
     background-color: rgb(151, 146, 228);
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 50px;
 }
 
 #benefits .row {
-    background-color: rgb(155, 124, 59);
     display: flex;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 #benefits .col-100 {
-    background-color: rgb(51, 175, 82);
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 10%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 #benefits .col-33 {
-    background-color: rgb(51, 175, 82);
-    width: calc(100% /3);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 10%;
+    background-color: white;
+    width: calc(100% / 4);
+    color: rgb(151, 146, 228);
+    padding: 30px;
+    border-radius: 5%;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#benefits .col-33 h2 {
+    font-size: 60px;
+}
+
+#benefits .col-33 h3 {
+    padding-bottom: 20px;
+}
+
+#benefits .col-33 p {
+    padding-bottom: 30px;
+}
+
+#benefits .col-33 span {
+    color: white;
+    background-color: rgb(151, 146, 228);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20%;
+    font-weight: bold;
 }
 
 #about .container {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 #about .row {
-    background-color: rgb(59, 141, 155);
     display: flex;
 }
 
 #about .col-80 {
-    background-color: rgb(71, 40, 45);
-    width: 75%;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10%;
+    width: 42%;
+    margin-right: 70px;
+    margin-left: 100px;
+}
+
+#about .col-80 h2 {
+    font-size: 50px;
+    color: rgb(151, 146, 228);
+}
+
+#about .col-80 p {
+    font-size: 13px;
+    line-height: 30px;
+    margin-top: 25px;
 }
 
 #about .col-20 {
-    background-color: rgb(73, 40, 51);
-    width: 20%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10%;
+    width: 15%;
+    color: rgb(151, 146, 228);
+}
+
+#about .col-20 h2 {
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    padding-left: 120px;
+}
+
+#about .col-20 .about-man {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+#about .col-20 p {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+#about span {
+    width: 80%;
+    display: flex;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(151, 146, 228);
+    border-radius: 10%;
+    padding: 5px;
+}
+
+#about span img {
+    width: 9%;
+    height: 9%;
+    filter: invert(100%);
+    margin-top: 2px;
+    margin-right: 10px;
 }
 
 #getstart {
