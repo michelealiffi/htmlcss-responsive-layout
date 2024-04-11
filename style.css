@@ -53,22 +53,26 @@ main {
 #jumbo .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 #jumbo .col-60 {
     background-color: rgb(181, 221, 255);
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 60%;
+    width: 63%;
     display: flex;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #jumbo .col-60 .content {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
     position: absolute;
+    width: 55%;
 }
 
 #jumbo .col-60 h2 {
@@ -78,7 +82,7 @@ main {
 }
 
 #jumbo .col-60 p {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-right: 80px;
     line-height: 200%;
     font-size: 15px;
@@ -90,36 +94,41 @@ main {
     background-color: rgb(0, 132, 253);
     color: white;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20%;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 18px;
     letter-spacing: 2px;
 }
 
-#jumbo .col-60 img {
-    margin-left: 10px;
-    width: 80%;
+#jumbo .col-60 .phone {
+    margin-left: 400px;
+    margin-top: 20px;
+    width: 60%;
 }
 
 #jumbo .col-33 {
     background-color: rgb(181, 221, 255);
-    width: calc(100% / 3 -30px);
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 10%;
+    width: calc(100% / 4 -20px);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
 #jumbo .col-33 .content {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #jumbo .col-33 h2 {
     color: rgb(0, 132, 253);
     font-size: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -129,21 +138,30 @@ main {
     line-height: 200%;
     font-size: 15px;
     font-weight: bold;
-    line-height: 200%;
     text-align: center;
     color: rgb(71, 71, 71);
 }
 
-#jumbo .col-33 span {
-    background-color: rgb(0, 132, 253);
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20%;
-    letter-spacing: 2px;
+#jumbo .col-33 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code {
+    width: 18%;
+}
+
+.compass {
+    width: 25%;
+}
+
+.laptop {
+    width: 35%;
+}
+
+.megaphone {
+    width: 25%;
 }
 
 .apple {
@@ -157,15 +175,84 @@ main {
 
 #planning .container {
     margin-top: 70px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
-#planning img {
+#planning .row {
+    display: flex;
+}
+
+#planning .col-50 {
+    width: 50%;
+}
+
+#planning .content {
+    width: 95%;
+    margin: 0 auto;
+    padding-right: 20px;
+    color: white;
+}
+
+#planning .content img {
+    width: 100%;
+}
+
+#planning .content h2 {
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+#planning .content p {
+    margin-top: 40px;
+    font-size: 13px;
+    line-height: 170%;
+}
+
+#planning .content-2 {
+    background-color: white;
+    margin-top: 130px;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#planning .content-2 img {
+    width: 70%;
+}
+
+#planning .content-2 h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#planning .content-2 p {
+    font-size: 13px;
+    font-style: italic;
+    line-height: 200%;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+
+#planning .content-2 span {
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(151, 146, 228);
+    border-radius: 100px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #partners .container {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 #partners .col {
@@ -188,17 +275,44 @@ main {
 }
 
 #partners .col-100 {
-    display: flex;
     background-color: rgb(151, 146, 228);
     border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+#partners .col-100 .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-left: 15px;
 }
 
 #partners .col-100 img {
-    width: 40%;
-    height: 150%;
-    border-radius: 100px;
+    width: 20%;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
+#partners .col-100 p {
+    width: 70%;
+    margin-left: 60px;
+    margin-top: 70px;
+    color: white;
+}
+
+#partners .col-100 span {
+    font-size: 20px;
+
+}
+
+#partners .col-100 h3 {
+    position: absolute;
+    margin: 150px;
+    margin-left: 280px;
+    color: white;
+}
 
 #benefits {
     background-color: rgb(151, 146, 228);
@@ -210,6 +324,7 @@ main {
     padding-bottom: 40px;
     margin-right: -15px;
     margin-left: -15px;
+    justify-content: center;
 }
 
 #benefits .col-100 {
