@@ -27,6 +27,11 @@ header span {
     margin-left: 10px;
 }
 
+header .bars {
+    display: none;
+    width: 0%;
+}
+
 header .row {
     display: flex;
     flex-wrap: wrap;
@@ -522,6 +527,148 @@ footer span {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {    
+    header p {
+        display: none;
+    }
+    
+    header span {
+        display: none;
+    }
+    
+    header .bars {
+        display: inline-block;
+        width: 7%;
+    }
 
+    header .col {
+        width: auto;
+        margin-left: 40px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+    
+    #jumbo .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    #jumbo .col-60 {
+        margin-bottom: 30px;
+        width: 100%;
+        display: block;
+        position: static;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 335px;
+    }
+    
+    #jumbo .col-60 .content {
+        margin-top: 30px;
+        margin-left: 0px;
+        position: static;
+        width: 100%;
+    }
+    
+    #jumbo .col-60 h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #jumbo .col-60 p {
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 90px;
+    }
+    
+    #jumbo .col-60 span {
+        margin-left: 40px;
+    }
+    
+    #jumbo .col-60 .phone {
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+    
+    #jumbo .col-33 {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #planning .container {
+        margin-top: 70px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    #planning .row {
+        display: block;
+    }
+    
+    #planning .col-50 {
+        width: 100%;
+    }
+    
+    #planning .content {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 0px;
+        color: white;
+    }
+    
+    #planning .content img {
+        margin-top: 70px;
+        margin-left: 40px;
+        width: 80%;
+    }
+    
+    #planning .content h2 {
+        margin-left: 40px;
+        font-size: 40px;
+    }
+    
+    #planning .content p {
+        margin-left: 40px;
+        margin-right: 70px;
+        font-size: 20px;
+    }
+    
+    #planning .content-2 {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    #planning .content-2 img {
+        width: 90%;
+    }
+    
+    #planning .content-2 h2 {
+        font-size: 25px;
+    }
+    
+    #planning .content-2 p {
+        font-size: 15px;
+        padding: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #planning .content-2 span {
+        font-size: 25px;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
